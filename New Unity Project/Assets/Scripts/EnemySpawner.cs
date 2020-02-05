@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * EnemySpawner.cs
+ * By: Isaiah
+ * Description: randomly spawns in cacti 
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4785523130975955586}
   - component: {fileID: 6066648156903727550}
   - component: {fileID: 4602211009533154116}
-  - component: {fileID: 7645213068714143922}
+  - component: {fileID: -5523375004356222682}
   m_Layer: 0
   m_Name: Cloud
   m_TagString: Ground
@@ -104,7 +104,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7645213068714143922
+--- !u!114 &-5523375004356222682
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,6 +113,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3005699935050725834}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc152f16760494a4cae3a4fc8b937388, type: 3}
+  m_Script: {fileID: 11500000, guid: b79cdc4d4766c594781a32ec7daa66a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cloud: []
+  cloudspeed: -1
+  minDelay: 30
+  maxDelay: 40
+  spawnY: 0
