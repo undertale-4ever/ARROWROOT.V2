@@ -14,6 +14,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static float score;
+    public enum DayNightCycle { Day, Night }
     // Start is called before the first frame update
     void Start()
     {
