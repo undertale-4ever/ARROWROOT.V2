@@ -10,15 +10,14 @@ using UnityEngine;
 
 public class Score : MonoBehaviour
 {
-    public float playerScore;
+    
     public int highScore = 0;
     float speedSet;
 
     // Start is called before the first frame update
     void Start()
     {
-        //Set the player Score to zero to start
-        playerScore = 0;
+        
     }
    
     // Update is called once per frame
@@ -27,6 +26,7 @@ public class Score : MonoBehaviour
         //set the speed of the timer
         speedSet += 1 * Time.deltaTime * 5;
         //Round the timer to an integer
-        playerScore = Mathf.RoundToInt(speedSet);
+        //uses score from game manager script
+        GameManager.score = Mathf.RoundToInt(speedSet);
     }
 }

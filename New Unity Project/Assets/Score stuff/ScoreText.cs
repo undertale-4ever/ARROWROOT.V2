@@ -10,7 +10,7 @@ public class ScoreText : MonoBehaviour
     public void Score()
     {
         Text myText = GetComponent<Text>();
-        myText.text = "Score: " + FindObjectOfType<Score>().playerScore.ToString();
+        myText.text = "Score: " + GameManager.score.ToString();
     }
 
 
