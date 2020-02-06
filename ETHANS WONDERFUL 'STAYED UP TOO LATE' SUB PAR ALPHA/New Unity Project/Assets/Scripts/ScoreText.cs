@@ -7,14 +7,10 @@ public class ScoreText : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public Text highScore;
-
     public void Score()
     {
         Text myText = GetComponent<Text>();
-        myText.text = FindObjectOfType<Score>().playerScore.ToString();
-
-
+        myText.text = "Score: " + GameManager.score.ToString();
     }
 
 

@@ -7,38 +7,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-    public float playerScore;
-    public Text highScore;
+    
+    public int highScore = 0;
     float speedSet;
 
     // Start is called before the first frame update
     void Start()
     {
-        //Set the player Score to zero to start
-        playerScore = 0;
-
-        highScore.text = PlayerPrefs.GetInt("HI", 0).ToString();
+        
     }
    
     // Update is called once per frame
     void FixedUpdate()
     {
         //set the speed of the timer
-        speedSet += 1 * Time.deltaTime * (float)6.75;
+        speedSet += 1 * Time.deltaTime * 5;
         //Round the timer to an integer
-        playerScore = Mathf.RoundToInt(speedSet);
-
-        if(playerScore > PlayerPrefs.GetInt("HI", 0))
-        {
-            PlayerPrefs.SetInt("HI", (int)playerScore);
-        }
-        
-          
+        //uses score from game manager script
+        GameManager.score = Mathf.RoundToInt(speedSet);
     }
-
-   
 }
