@@ -22,7 +22,7 @@ public class MoonandStars : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        move();
     }
     public bool starmooncount()
     {
@@ -31,5 +31,9 @@ public class MoonandStars : MonoBehaviour
             return false;
         else
             return true;
+    }
+    void move()
+    {
+        moonstarRB.velocity = new Vector2(velocity, 0f );
     }
 }
