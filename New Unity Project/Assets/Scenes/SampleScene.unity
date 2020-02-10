@@ -139,7 +139,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25866fd01a87dbe48b1af61475955fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: 0
   highScore: 0
 --- !u!1001 &126610937
 PrefabInstance:
@@ -161,12 +160,12 @@ PrefabInstance:
     - target: {fileID: 7690253643257632918, guid: 3bf3118aabc9ddc46aeeb7a8a776a6c2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8
+      value: -7.93
       objectReference: {fileID: 0}
     - target: {fileID: 7690253643257632918, guid: 3bf3118aabc9ddc46aeeb7a8a776a6c2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5045583
+      value: -1.88
       objectReference: {fileID: 0}
     - target: {fileID: 7690253643257632918, guid: 3bf3118aabc9ddc46aeeb7a8a776a6c2,
         type: 3}
@@ -212,6 +211,37 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7690253643257632918, guid: 3bf3118aabc9ddc46aeeb7a8a776a6c2,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.08782608
+      objectReference: {fileID: 0}
+    - target: {fileID: 7690253643257632918, guid: 3bf3118aabc9ddc46aeeb7a8a776a6c2,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.08277793
+      objectReference: {fileID: 0}
+    - target: {fileID: 7690253643257632919, guid: 3bf3118aabc9ddc46aeeb7a8a776a6c2,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e96a22d4ff02e5242b2b4fdd2f3e57ec,
+        type: 3}
+    - target: {fileID: 7690253643257632919, guid: 3bf3118aabc9ddc46aeeb7a8a776a6c2,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7690253643257632919, guid: 3bf3118aabc9ddc46aeeb7a8a776a6c2,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7690253643257632919, guid: 3bf3118aabc9ddc46aeeb7a8a776a6c2,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bf3118aabc9ddc46aeeb7a8a776a6c2, type: 3}
