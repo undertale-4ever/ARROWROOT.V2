@@ -13,7 +13,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static float score;
+    public static float score = 0;
     public enum DayNight { Day, Night }
     public DayNight DayNightState = DayNight.Day; 
     // Start is called before the first frame update

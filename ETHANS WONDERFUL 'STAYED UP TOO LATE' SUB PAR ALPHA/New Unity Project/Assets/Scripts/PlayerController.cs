@@ -12,11 +12,12 @@ public class PlayerController : MonoBehaviour
 {
     bool jumpCheck = true;
     public string NextScene = "GameOver";
+    Animator myAnim;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        myAnim = GetComponent<Animator>();
     }
 
 
@@ -56,13 +57,14 @@ public class PlayerController : MonoBehaviour
 
         if(Input.GetKey(KeyCode.DownArrow))
         {
-            gameObject.transform.localScale = new Vector3(5, 4f, 1);
-            float fall = 25f;
-            rb.velocity = Vector2.down * fall;
+            //change anim state
+            myAnim.SetInteger("State", 2);
+            Collider2D rbCollider = GetComponent<Collider2D>();  
+            rbCollider.transform.position = new Vector2(0f,-4f); 
         }
         else
         {
-            gameObject.transform.localScale = new Vector3(5, 5f, 1);
+            myAnim.SetInteger("State", 1);
             
         }
     }
